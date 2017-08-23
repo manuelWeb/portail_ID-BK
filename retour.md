@@ -1,4 +1,15 @@
 ### retours maquette portail IDEAL BAKKER
+*21/0817 Stéphane DERVAUX suite maquette V2*
+
+##### Changement en fonction du pays de l'utilisateur (BF BV DE FR NL UK) :
+- logos + leurs liens.
+- texte "Welcome..." dans la langue utilisateur.
+- bouton "Accéder directement au site" langue + drapeau + lien
+- couverture + lien
+
+##### Carrousel
+- Sélection de produits identiques IDEAL et BAKKER X 10 ou X 15 etc ?
+- images sans liens ou affichage d'une info bulle "sélectionner votre enseigne".
 
 *Marie Lefebvre mail mer. 02/08/2017 15:44*
 

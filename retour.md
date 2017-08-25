@@ -1,5 +1,5 @@
 ### retours maquette portail IDEAL BAKKER
-*21/0817 Stéphane DERVAUX suite maquette V2*
+*21/08/17 Stéphane DERVAUX suite maquette V2*
 
 ##### Changement en fonction du pays de l'utilisateur (BF BV DE FR NL UK) :
 - logos + leurs liens.

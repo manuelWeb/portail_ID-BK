@@ -1,0 +1,96 @@
+$bk_color: #275D38; 
+$id_color: #EB1A22; 
+.rounded {
+   border-radius: 6px;
+}
+body {
+  min-height: 100vh;
+  background-image: url(../img/fotolia_144721281.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.header {
+  display: flex;
+  // img[src^="img/ID"] {border: 1px solid green;}
+  img {
+    flex: 1;
+    align-self: end;
+  }
+  p {
+    margin: auto;
+    flex-direction: column;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.select_country {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+.cover {
+}
+.id {
+  margin-right: 20px;
+  h1 {
+    color: $id_color;
+  }
+  .country_lk { background-color: $id_color; }
+}
+.bk {
+  h1 {
+    color: $bk_color;
+  }
+  .country_lk { background-color: $bk_color; }
+}
+.id, .bk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @extend .rounded;
+  width: 460px;
+  min-height: 260px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  h1 {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .country select, .country input {
+    @extend .rounded;
+    -webkit-appearance:none;
+    height: 35px;
+    border: none;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .country select {
+    width: 240px;
+    padding-left: 12px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #FFF url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+  }
+  .country input[type=submit] {
+    margin-left: 8px;
+    padding: 0 32px;
+    color: #fff;
+    background-color: #888;
+  }
+  .country_lk {
+    @extend .rounded;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 44px;
+    width: 296px;
+    height: 44px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+}

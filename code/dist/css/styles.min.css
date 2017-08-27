@@ -1,0 +1,91 @@
+.rounded, .id, .bk, .id .country select, .id .country input, .bk .country select, .bk .country input, .id .country_lk, .bk .country_lk {
+  border-radius: 6px; }
+
+body {
+  min-height: 100vh;
+  background-image: url(../img/fotolia_144721281.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+
+.header {
+  display: -ms-flexbox;
+  display: flex; }
+  .header img {
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; }
+  .header p {
+    margin: auto;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.select_country {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.id {
+  margin-right: 20px; }
+  .id h1 {
+    color: #EB1A22; }
+  .id .country_lk {
+    background-color: #EB1A22; }
+
+.bk h1 {
+  color: #275D38; }
+
+.bk .country_lk {
+  background-color: #275D38; }
+
+.id, .bk {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 460px;
+  min-height: 260px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .id h1, .bk h1 {
+    font-size: 21px;
+    font-weight: bold; }
+  .id .country select, .id .country input, .bk .country select, .bk .country input {
+    -webkit-appearance: none;
+    height: 35px;
+    border: none;
+    overflow: hidden;
+    font-size: 16px; }
+  .id .country select, .bk .country select {
+    width: 240px;
+    padding-left: 12px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #FFF url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%; }
+  .id .country input[type=submit], .bk .country input[type=submit] {
+    margin-left: 8px;
+    padding: 0 32px;
+    color: #fff;
+    background-color: #888; }
+  .id .country_lk, .bk .country_lk {
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 44px;
+    width: 296px;
+    height: 44px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; }

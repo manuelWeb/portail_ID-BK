@@ -1,0 +1,67 @@
+doctype strict
+html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+  head
+    meta http-equiv="Content-Type" content="text/html;charset=UTF-8"
+    title
+      | portail ID-BK
+    link href="css/styles.min.css" rel="stylesheet" type="text/css"
+  body
+    / section
+    div.header
+      img src="img/ID-uk_logo.png" alt=""
+      img src="img/BK_logo.png" alt=""
+      p.intro
+        | Welcome to IDEAL PRATIQUE and BAKKER COMFORT select your brand and then your country.
+
+    / main.wrapper
+    div.wrapper
+      .select_country
+        .id
+          h1
+            | IDEAL &amp; PRATIQUE
+          form action=""
+            p.country
+              select#ID_country name="ID_country"
+                option value="FR"
+                 | France
+                option value="BF"
+                 | Belgique BF
+                option value="BV"
+                 | Belgique BV
+                option value="NL"
+                 | Pays bas NL
+                option value="DE"
+                 | Allemagne DE
+                option value="UK"
+                 | Angleterre UK
+              input name="ID_country_submit" type="submit" value="GO"
+
+          a.country_lk#ID_country_browser_origin href="http://#browser_country.ct"
+             | Direct acces to the site ►
+        .bk
+          h1
+            | BAKKER COMFORT
+          form action=""
+            p.country
+              select#BK_country name="BK_country"
+                option value="FR"
+                 | France
+                option value="BF"
+                 | Belgique BF
+                option value="BV"
+                 | Belgique BV
+                option value="NL"
+                 | Pays bas NL
+                option value="DE"
+                 | Allemagne DE
+                option value="UK"
+                 | Angleterre UK
+              input name="BK_country_submit" type="submit" value="GO"
+
+          a.country_lk#BK_country_browser_origin href="http://#browser_country.ct"
+             | Direct acces to the site ►
+      .cover
+        img src="img/cov_ID.jpg" alt=""
+        img src="img/cov_BK.jpg" alt=""
+
+    script src="js/app.min.js"

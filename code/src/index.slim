@@ -5,16 +5,20 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
     title
       | portail ID-BK
     link href="css/styles.min.css" rel="stylesheet" type="text/css"
+    script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"
   body
     / section
-    div.header
+    .header
       img src="img/ID-uk_logo.png" alt=""
       img src="img/BK_logo.png" alt=""
-      p.intro
+    
+    .intro
+      p
+        / User browser country language
         | Welcome to IDEAL PRATIQUE and BAKKER COMFORT select your brand and then your country.
 
     / main.wrapper
-    div.wrapper
+    .wrapper
       .select_country
         .id
           h1
@@ -37,7 +41,9 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
               input name="ID_country_submit" type="submit" value="GO"
 
           a.country_lk#ID_country_browser_origin href="http://#browser_country.ct"
-             | Direct acces to the site ►
+            / change en fonction de la localisation du navigateur utilisateur
+            img src="img/flag_UK.png" alt=""
+            | Direct acces to the site ►
         .bk
           h1
             | BAKKER COMFORT
@@ -59,9 +65,23 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
               input name="BK_country_submit" type="submit" value="GO"
 
           a.country_lk#BK_country_browser_origin href="http://#browser_country.ct"
-             | Direct acces to the site ►
+            / img change depending on the location of the user browser
+            img src="img/flag_UK.png" alt=""
+            | Direct acces to the site ►
       .cover
-        img src="img/cov_ID.jpg" alt=""
-        img src="img/cov_BK.jpg" alt=""
+        img src="img/cov-0917-ID_UK.jpg" alt=""
+        img src="img/covWin17-BK_GB.jpg" alt=""
+      
+      / https://codepen.io/seleckis/pen/WwQgvx
+      .carousel.js-carousel
+        .carousel__container.js-carousel-container
+          .carousel__list.js-carousel-list
+            - for i in 1..12
+              .carousel__item.js-carousel-item == i
+        .carousel__nav
+          button.carousel__button--prev.js-carousel-button data-dir="prev"
+            |&lt;
+          button.carousel__button--next.js-carousel-button data-dir="next"
+            |&gt;
 
     script src="js/app.min.js"

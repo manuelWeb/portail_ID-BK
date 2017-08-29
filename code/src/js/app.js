@@ -20,7 +20,7 @@ $(".js-carousel").each(function(){
         listWidth = $carouselList.outerWidth(),
         before = (curPos + containerWidth),
         after = listWidth + (curPos - containerWidth);
-        console.log(listWidth)
+        // console.log(listWidth)
       if(dir=="next"){
         moveto = (after < containerWidth) ? curPos - after : curPos - containerWidth - 20;
       } else {

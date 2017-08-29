@@ -1,0 +1,41 @@
+// carousel
+.carousel{
+  @extend .rounded;
+  box-shadow: 0 0 24px rgba(0, 0, 0, .35);
+  position: relative;
+  margin-top: 60px;
+  padding: 20px 80px;
+  background-color: #fff;
+}
+.carousel__button--prev, .carousel__button--next{
+  appearance: none;
+  position: absolute; top: 0; bottom: 0;
+  width: 80px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.carousel__button--prev{left: 0; }
+.carousel__button--next{right: 0; }
+.carousel__container {
+  overflow: hidden;
+  height: 140px;
+}
+.carousel__list{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.carousel__list.unwrap{
+  flex-wrap: nowrap;
+}
+.carousel__item{
+  width: 140px; height: 140px;
+  margin-right: 20px;
+  line-height: 140px;
+  text-align: center;
+  // border: 1px solid #fff;
+  background-color: #ccc;
+  &:last-child {margin-right: 0;}
+}

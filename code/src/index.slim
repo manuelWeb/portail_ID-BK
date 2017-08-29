@@ -76,12 +76,12 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       .carousel.js-carousel
         .carousel__container.js-carousel-container
           .carousel__list.js-carousel-list
-            - for i in 1..12
+            - for i in 1..18
               .carousel__item.js-carousel-item == i
         .carousel__nav
           button.carousel__button--prev.js-carousel-button data-dir="prev"
-            |&lt;
+            img src="img/prev-btn.png" alt=""/
           button.carousel__button--next.js-carousel-button data-dir="next"
-            |&gt;
+            img src="img/next-btn.png" alt=""/
 
     script src="js/app.min.js"

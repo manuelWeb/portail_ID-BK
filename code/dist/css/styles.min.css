@@ -1,4 +1,95 @@
-.rounded, .id, .bk, .id .country select, .id .country input, .bk .country select, .bk .country input, .id .country_lk, .bk .country_lk {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.carousel {
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
+  position: relative;
+  margin-top: 60px;
+  padding: 20px 80px;
+  background-color: #fff; }
+
+.carousel__button--prev, .carousel__button--next {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+.carousel__button--prev {
+  left: 0; }
+
+.carousel__button--next {
+  right: 0; }
+
+.carousel__container {
+  overflow: hidden;
+  height: 140px; }
+
+.carousel__list {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.carousel__list.unwrap {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+.carousel__item {
+  width: 140px;
+  height: 140px;
+  margin-right: 20px;
+  line-height: 140px;
+  text-align: center;
+  background-color: #ccc; }
+  .carousel__item:last-child {
+    margin-right: 0; }
+
+.rounded, .carousel, .id, .bk, .id .country select, .id .country input, .bk .country select, .bk .country input, .id .country_lk, .bk .country_lk {
   border-radius: 6px; }
 
 body {
@@ -48,10 +139,11 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 46px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 50px;
+  padding: 14px 10px;
+  text-align: center;
   font-size: 1.125em;
   /* 18/16 = 1.125 */
   font-weight: bold;
@@ -98,6 +190,9 @@ body {
 .bk .country_lk {
   background-color: #275D38; }
 
+select::-ms-expand {
+  display: none; }
+
 .id, .bk {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -113,22 +208,29 @@ body {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5); }
   .id h1, .bk h1 {
+    margin-bottom: 40px;
     font-size: 1.3125em;
     font-weight: bold; }
   .id .country select, .id .country input, .bk .country select, .bk .country input {
     -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     height: 35px;
     border: none;
     overflow: hidden;
     font-size: 1em; }
   .id .country select, .bk .country select {
-    appearance: none;
-    -moz-appearance: none;
     -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 240px;
+    padding: 0;
     padding-left: 12px;
     border: 1px solid #999999;
-    background: #FFF url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%; }
+    background: #FFF url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    outline: none; }
   .id .country input[type=submit], .bk .country input[type=submit] {
     margin-left: 8px;
     padding: 0 32px;
@@ -137,6 +239,7 @@ body {
   .id .country_lk, .bk .country_lk {
     display: inline-block;
     margin: 0 auto;
+    margin-top: 30px;
     line-height: 44px;
     width: 296px;
     height: 44px;
@@ -145,47 +248,3 @@ body {
     text-align: center; }
     .id .country_lk img, .bk .country_lk img {
       margin: 0 6px -4px 0; }
-
-.carousel {
-  position: relative;
-  padding: 20px 80px;
-  background-color: #fff; }
-
-.carousel__button--prev, .carousel__button--next {
-  position: absolute;
-  top: 0;
-  bottom: 0; }
-
-.carousel__button--prev {
-  left: 0; }
-
-.carousel__button--next {
-  right: 0; }
-
-.carousel__container {
-  overflow: hidden;
-  height: 140px; }
-
-.carousel__list {
-  position: relative;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-
-.carousel__list.unwrap {
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
-
-.carousel__item {
-  width: 140px;
-  height: 140px;
-  margin-right: 20px;
-  line-height: 140px;
-  text-align: center;
-  background-color: #ccc; }
-  .carousel__item:last-child {
-    margin-right: 0; }

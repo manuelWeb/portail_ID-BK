@@ -22,22 +22,23 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       .select_country
         .id
           h1
-            | IDEAL &amp; PRATIQUE
+            | IDEAL &amp; PRACTICAL
           form action=""
-            p.country
-              select#ID_country name="ID_country"
-                option value="FR"
-                 | France
-                option value="BF"
-                 | Belgique BF
-                option value="BV"
-                 | Belgique BV
-                option value="NL"
-                 | Pays bas NL
-                option value="DE"
-                 | Allemagne DE
-                option value="UK"
-                 | Angleterre UK
+            .country
+              .country_selPerso
+                select#ID_country name="ID_country"
+                  option value="UK"
+                    | England
+                  option value="BF"
+                    | Belgique BF
+                  option value="BV"
+                    | Belgique BV
+                  option value="NL"
+                    | Pays bas NL
+                  option value="DE"
+                    | Allemagne DE
+                  option value="FR"
+                    | France FR
               input name="ID_country_submit" type="submit" value="GO"
 
           a.country_lk#ID_country_browser_origin href="http://#browser_country.ct"
@@ -48,20 +49,21 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
           h1
             | BAKKER COMFORT
           form action=""
-            p.country
-              select#BK_country name="BK_country"
-                option value="FR"
-                 | France
-                option value="BF"
-                 | Belgique BF
-                option value="BV"
-                 | Belgique BV
-                option value="NL"
-                 | Pays bas NL
-                option value="DE"
-                 | Allemagne DE
-                option value="UK"
-                 | Angleterre UK
+            .country
+              .country_selPerso
+                select#BK_country name="BK_country"
+                  option value="UK"
+                    | England
+                  option value="BF"
+                    | Belgique BF
+                  option value="BV"
+                    | Belgique BV
+                  option value="NL"
+                    | Pays bas NL
+                  option value="DE"
+                    | Allemagne DE
+                  option value="FR"
+                    | France FR
               input name="BK_country_submit" type="submit" value="GO"
 
           a.country_lk#BK_country_browser_origin href="http://#browser_country.ct"
@@ -76,8 +78,9 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       .carousel.js-carousel
         .carousel__container.js-carousel-container
           .carousel__list.js-carousel-list
-            - for i in 1..18
-              .carousel__item.js-carousel-item == i
+            - for i in 1..12
+              .carousel__item.js-carousel-item
+                img src==(i < 10 ? "img/carousel/pk0#{i}.jpg" : "img/carousel/pk#{i}.jpg") alt=""
         .carousel__nav
           button.carousel__button--prev.js-carousel-button data-dir="prev"
             img src="img/prev-btn.png" alt=""/

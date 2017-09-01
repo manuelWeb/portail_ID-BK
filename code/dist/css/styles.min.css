@@ -39,6 +39,7 @@ table {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
   position: relative;
   margin-top: 60px;
+  margin-bottom: 120px;
   padding: 20px 80px;
   background-color: #fff; }
 
@@ -89,7 +90,7 @@ table {
   .carousel__item:last-child {
     margin-right: 0; }
 
-.rounded, .carousel, .id, .bk, .id .country select, .id .country input, .bk .country select, .bk .country input, .id .country_lk, .bk .country_lk {
+.rounded, .carousel, .id, .bk, .id .country_selPerso, .bk .country_selPerso, .id .country input[type=submit], .bk .country input[type=submit], .id .country_lk, .bk .country_lk {
   border-radius: 6px; }
 
 body {
@@ -211,28 +212,51 @@ select::-ms-expand {
     margin-bottom: 40px;
     font-size: 1.3125em;
     font-weight: bold; }
+  .id .country, .bk .country {
+    width: 346px;
+    margin: 0 auto; }
+  .id .country_selPerso, .bk .country_selPerso {
+    position: relative;
+    float: left;
+    width: 240px;
+    border: 1px solid #999999;
+    background-color: #fff;
+    overflow: hidden; }
+    .id .country_selPerso:after, .bk .country_selPerso:after {
+      content: '';
+      width: 0;
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      margin-top: -3px;
+      border-width: 6px 4px;
+      border-style: solid;
+      pointer-events: none;
+      border-color: #656565 transparent transparent transparent; }
   .id .country select, .id .country input, .bk .country select, .bk .country input {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
     height: 35px;
     border: none;
     overflow: hidden;
     font-size: 1em; }
   .id .country select, .bk .country select {
+    box-sizing: content-box;
+    width: 120%;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    width: 240px;
     padding: 0;
     padding-left: 12px;
-    border: 1px solid #999999;
-    background: #FFF url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+);
-    background-position: 98% center;
-    background-repeat: no-repeat;
-    outline: none; }
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
+    outline: none;
+    overflow: hidden; }
   .id .country input[type=submit], .bk .country input[type=submit] {
-    margin-left: 8px;
+    height: 37px;
     padding: 0 32px;
     color: #fff;
     background-color: #888; }

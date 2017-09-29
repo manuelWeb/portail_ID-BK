@@ -12,8 +12,6 @@ $id_color: #EB1A22;
    border-radius: 6px;
 }
 body {
-  // display: flex;
-  // flex-direction: column;
   min-height: 100vh;
   margin: 20px 0;
   background-image: url(../img/BG_site_144721281.jpg);
@@ -42,7 +40,6 @@ body {
 }
 .intro {
   display: flex; align-items: center; justify-content: center;
-  // height: 46px;
   margin: auto; margin-top: 30px; margin-bottom: 50px;
   padding: 14px 10px;
   text-align: center;
@@ -98,27 +95,56 @@ select::-ms-expand {
     font-size: em(21);
     font-weight: bold;
   }
-  .country select, .country input {
-    appearance: none;
+  .country {
+    width: 346px;
+    margin: 0 auto;
+  }
+  .country_selPerso {
     @extend .rounded;
+    position: relative;
+    // display: inline-block;
+    float: left;
+    width: 240px;
+    border: 1px solid #999999;
+    background-color: #fff;
+    overflow: hidden;
+    &:after {
+      // triangle select
+      content: '';
+      width: 0;
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      margin-top: -3px;
+      border-width: 6px 4px;
+      border-style: solid;
+      pointer-events: none;
+      border-color: #656565 transparent transparent transparent;
+    }
+  }
+  .country select, .country input {
     height: 35px;
     border: none;
     overflow: hidden;
     font-size: em(16);
   }
   .country select {
+    box-sizing: content-box;
+    width: 120%;
     appearance: none;
-    width: 240px;
     padding: 0;
     padding-left: 12px;
-    border: 1px solid #999999;
-    background: #FFF url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+);
-    background-position: 98% center;
-    background-repeat: no-repeat;
+    // text-indent: 10px;
+    user-select: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
     outline: none;
+    overflow: hidden;
   }
   .country input[type=submit] {
-    margin-left: 8px;
+    @extend .rounded;
+    height: 37px;
     padding: 0 32px;
     color: #fff;
     background-color: #888;

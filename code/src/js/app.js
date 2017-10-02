@@ -1,5 +1,14 @@
 // script détection langage navigateur utilisateur
-function change() {
+var requestURL = 'js/translate.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);request.responseType = 'json';
+request.send();
+request.onload = function() {
+  var trad = request.response;
+  change(trad);
+}
+// inject trad en fct nav.lang
+function change(jsonObj) {
   var btnBk = document.getElementById('BK_country_browser_origin');
   var btnId = document.getElementById('ID_country_browser_origin');
   if (navigator.language == "fr" || navigator.language == "fr-FR" || navigator.language == "fr-be") {
@@ -8,8 +17,8 @@ function change() {
     btnId.href = 'http://bakkercomfort.be/';
     btnBk.href = 'http://bakkercomfort.be/';
   }else if (navigator.language == "en" || navigator.language == "en-US" || navigator.language == "en-GB") {
-    btnId.innerHTML = "<img alt=\"\" src=\"img/flag_UK.png\" />Direct access to the site";
-    btnBk.innerHTML = "<img alt=\"\" src=\"img/flag_UK.png\" />Direct access to the site";
+    btnId.innerHTML = '<img alt="" src="img/flag_UK.png" />'+jsonObj['btn']['uk'];
+    btnBk.innerHTML = '<img alt="" src="img/flag_UK.png" />'+jsonObj['btn']['uk'];
     btnId.href = 'lien/fr';
     btnBk.href = 'lien/fr';
   }else if (navigator.language == "de" || navigator.language == "dei-DE" || navigator.language == "dsb-DE") {

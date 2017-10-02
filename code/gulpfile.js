@@ -19,13 +19,14 @@ gulp.task('default', function (cb) {
   });
 });
 // Static Server + watching scss/html files
-gulp.task('serve', ['slim', 'sass', 'js', 'images' ], function() {
+gulp.task('serve', ['slim', 'sass', 'json', 'js', 'images' ], function() {
 
     browserSync.init({
         server: 'dist/'
     });
     gulp.watch('src/*.slim', ['slim']);
     gulp.watch('src/scss/**/*.scss', ['sass']);
+    gulp.watch('src/js/**/*.json', ['json']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/img/**/*.+(png|jpg|gif|svg)', ['images']);
     gulp.watch('dist/*.html').on('change', browserSync.reload);
@@ -51,10 +52,15 @@ gulp.task('sass', function () {
 
 // Configure JS.
 gulp.task('js', function() {
-  return gulp.src('src/js/**/*.js')
-    .pipe(uglify())
+  return gulp.src(['src/js/**/*.js'])
+    // .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.stream());
+});
+gulp.task('json', function() {
+  return gulp.src(['src/js/**/*.json'])
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream());
 });
@@ -71,8 +77,9 @@ gulp.task('watch', function () {
   gulp.watch('src/*.slim', ['slim']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch('src/js/**/*.js', ['js']);
+  gulp.watch('src/js/**/*.json', ['json']);
   gulp.watch('src/img/**/*.+(png|jpg|gif|svg)', ['images']);
   gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
-gulp.task('gulp1', ['slim', 'sass', 'js', 'images', 'serve']);
+gulp.task('gulp1', ['slim', 'sass', 'json', 'js', 'images', 'serve']);

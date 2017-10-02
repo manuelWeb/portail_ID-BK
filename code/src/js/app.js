@@ -1,3 +1,39 @@
+// script détection langage navigateur utilisateur
+function change() {
+  var btnBk = document.getElementById('BK_country_browser_origin');
+  var btnId = document.getElementById('ID_country_browser_origin');
+  if (navigator.language == "fr" || navigator.language == "fr-FR" || navigator.language == "fr-be") {
+    btnId.innerHTML = "<img alt=\"\" src=\"img/flag_BF.png\" />Accéder directement au site";
+    btnBk.innerHTML = "<img alt=\"\" src=\"img/flag_BF.png\" />Accéder directement au site";
+    btnId.href = 'http://bakkercomfort.be/';
+    btnBk.href = 'http://bakkercomfort.be/';
+  }else if (navigator.language == "en" || navigator.language == "en-US" || navigator.language == "en-GB") {
+    btnId.innerHTML = "<img alt=\"\" src=\"img/flag_UK.png\" />Direct access to the site";
+    btnBk.innerHTML = "<img alt=\"\" src=\"img/flag_UK.png\" />Direct access to the site";
+    btnId.href = 'lien/fr';
+    btnBk.href = 'lien/fr';
+  }else if (navigator.language == "de" || navigator.language == "dei-DE" || navigator.language == "dsb-DE") {
+    btnId.innerHTML = "<img alt=\"\" src=\"img/flag_DE.png\" />Direkter Zugang auf die Internetseite";
+    btnBk.innerHTML = "<img alt=\"\" src=\"img/flag_DE.png\" />Direkter Zugang auf die Internetseite";
+    btnId.href = 'lien/fr';
+    btnBk.href = 'lien/fr';
+  }else if (navigator.language == "nl" || navigator.language == "nl-BE" || navigator.language == "fy-NL") {
+    btnId.innerHTML = "<img alt=\"\" src=\"img/flag_NL.png\" />Directe toegang tot de website";
+    btnBk.innerHTML = "<img alt=\"\" src=\"img/flag_NL.png\" />Directe toegang tot de website";
+    btnId.href = 'lien/fr';
+    btnBk.href = 'lien/fr';
+  }else if (navigator.language == "nl-be") {
+    btnId.innerHTML = "<img alt=\"\" src=\"img/flag_BV.png\" />Directe toegang tot de website";
+    btnBk.innerHTML = "<img alt=\"\" src=\"img/flag_BV.png\" />Directe toegang tot de website";
+    btnId.href = 'lien/fr';
+    btnBk.href = 'lien/fr';
+  }
+  // var userLang = navigator.language || navigator.userLanguage; 
+  // alert ("The language is: " + userLang);
+}
+change()
+
+// script carousel (jquery)
 $(".js-carousel").each(function(){
   var $carousel = $(this),
     $carouselContainer = $carousel.find(".js-carousel-container"),

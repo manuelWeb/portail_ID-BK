@@ -71,8 +71,8 @@ function change(jsonObj) {
     id_h1.innerHTML = jsonObj['id_h1']['nl'];
     btnId.innerHTML = jsonObj['flag']['nl']+jsonObj['btn']['nl'][0];
     btnBk.innerHTML = jsonObj['flag']['nl']+jsonObj['btn']['nl'][0];
-    // document.querySelectorAll('option[value=NL')[0].selected = 'selected';
-    // document.querySelectorAll('option[value=NL')[1].selected = 'selected';
+    // document.querySelectorAll('option[value=NL]')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=NL]')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['nl'];
     df_opt[1].text = jsonObj['default_opt']['nl'];
     btnId.href = jsonObj['id_link']['nl'];
@@ -85,8 +85,8 @@ function change(jsonObj) {
     id_h1.innerHTML = jsonObj['id_h1']['uk'];
     btnId.innerHTML = jsonObj['flag']['uk']+jsonObj['btn']['uk'][0];
     btnBk.innerHTML = jsonObj['flag']['uk']+jsonObj['btn']['uk'][0];
-    // document.querySelectorAll('option[value=UK')[0].selected = 'selected';
-    // document.querySelectorAll('option[value=UK')[1].selected = 'selected';
+    // document.querySelectorAll('option[value=UK]')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=UK]')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['uk'];
     df_opt[1].text = jsonObj['default_opt']['uk'];
     btnId.href = jsonObj['id_link']['uk'];
@@ -147,7 +147,7 @@ function change(jsonObj) {
       btnBk.href = 'http://bakkercomfort.nl/';
       coverId.src = jsonObj['cover']['nl']['0'];
       coverBk.src = jsonObj['cover']['nl']['1'];
-      document.querySelectorAll('option[value=NL')[1].selected = 'selected';
+      document.querySelectorAll('option[value=NL]')[1].selected = 'selected';
     }else if (this.value === "UK") {
       logoID.src = jsonObj['logo_ID']['uk'];
       intro.innerHTML = jsonObj['intro']['uk'];
@@ -160,7 +160,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['uk'];
       coverId.src = jsonObj['cover']['uk']['0'];
       coverBk.src = jsonObj['cover']['uk']['1'];
-      document.querySelectorAll('option[value=UK')[1].selected = 'selected';
+      document.querySelectorAll('option[value=UK]')[1].selected = 'selected';
     }
   }
   document.getElementById('BK_country').onchange = function() {
@@ -177,7 +177,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['bf'];
       coverId.src = jsonObj['cover']['bf']['0'];
       coverBk.src = jsonObj['cover']['bf']['1'];
-      document.querySelectorAll('option[value=BF')[0].selected = 'selected';
+      document.querySelectorAll('option[value=BF]')[0].selected = 'selected';
     }else if (this.value === "BV") {
       logoID.src = jsonObj['logo_ID']['bv'];
       intro.innerHTML = jsonObj['intro']['bv'];
@@ -190,7 +190,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['bf'];
       coverId.src = jsonObj['cover']['bv']['0'];
       coverBk.src = jsonObj['cover']['bv']['1'];
-      document.querySelectorAll('option[value=BV')[0].selected = 'selected';
+      document.querySelectorAll('option[value=BV]')[0].selected = 'selected';
     }else if (this.value === "DE") {
       logoID.src = jsonObj['logo_ID']['de'];
       intro.innerHTML = jsonObj['intro']['de'];
@@ -203,7 +203,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['de'];
       coverId.src = jsonObj['cover']['de']['0'];
       coverBk.src = jsonObj['cover']['de']['1'];
-      document.querySelectorAll('option[value=DE')[0].selected = 'selected';
+      document.querySelectorAll('option[value=DE]')[0].selected = 'selected';
       console.log(df_opt[0])
     }else if (this.value === "NL") {
       logoID.src = jsonObj['logo_ID']['nl'];
@@ -217,7 +217,7 @@ function change(jsonObj) {
       btnBk.href = 'http://bakkercomfort.nl/';
       coverId.src = jsonObj['cover']['nl']['0'];
       coverBk.src = jsonObj['cover']['nl']['1'];
-      document.querySelectorAll('option[value=NL')[0].selected = 'selected';
+      document.querySelectorAll('option[value=NL]')[0].selected = 'selected';
     }else if (this.value === "UK") {
       logoID.src = jsonObj['logo_ID']['uk'];
       intro.innerHTML = jsonObj['intro']['uk'];
@@ -230,7 +230,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['uk'];
       coverId.src = jsonObj['cover']['uk']['0'];
       coverBk.src = jsonObj['cover']['uk']['1'];
-      document.querySelectorAll('option[value=UK')[0].selected = 'selected';
+      document.querySelectorAll('option[value=UK]')[0].selected = 'selected';
     }
   }
 } // fct change lancée par evt request.onload

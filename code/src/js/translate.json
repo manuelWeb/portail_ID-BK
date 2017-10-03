@@ -1,8 +1,9 @@
 {
   "btn" : {
-    "fr": "Accéder directement au site",
+    "bf": "Accéder directement au site",
+    "bv": "Directe toegang tot de website",
+    "de": "Direkter Zugang auf die Internetseite",
+    "nl": "Directe toegang tot de website",
     "uk": "Direct access to the site :)"
-  },
-  "homeTown" : "Metro City",
-  "formed" : 2030
+  }
 }

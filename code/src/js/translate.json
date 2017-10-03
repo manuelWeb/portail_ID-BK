@@ -34,6 +34,13 @@
     "nl": "Nederland",
     "uk": "United Kingdom"
   },
+  "selcted_opt": {
+    "bf": "BF",
+    "bv": "BV",
+    "de": "DE",
+    "nl": "NL",
+    "uk": "UK"
+  },
   "submit": {
     "bf": "GO",
     "bv": "GO",

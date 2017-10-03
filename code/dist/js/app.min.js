@@ -27,6 +27,8 @@ function change(jsonObj) {
     id_h1.innerHTML = jsonObj['id_h1']['bf'];
     btnId.innerHTML = jsonObj['flag']['bf']+jsonObj['btn']['bf'][0];
     btnBk.innerHTML = jsonObj['flag']['bf']+jsonObj['btn']['bf'][0];
+    // document.querySelectorAll('option[value=BF]')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=BF]')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['bf'];
     df_opt[1].text = jsonObj['default_opt']['bf'];
     btnId.href = jsonObj['id_link']['bf'];
@@ -39,6 +41,8 @@ function change(jsonObj) {
     id_h1.innerHTML = jsonObj['id_h1']['bv'];
     btnId.innerHTML = jsonObj['flag']['bv']+jsonObj['btn']['bv'][0];
     btnBk.innerHTML = jsonObj['flag']['bv']+jsonObj['btn']['bv'][0];
+    // document.querySelectorAll('option[value=BV]')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=BV]')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['bv'];
     df_opt[1].text = jsonObj['default_opt']['bv'];
     btnId.href = jsonObj['id_link']['bv'];
@@ -53,6 +57,8 @@ function change(jsonObj) {
     submit_bk.value = jsonObj['submit']['de'];
     btnId.innerHTML = jsonObj['flag']['de']+jsonObj['btn']['de'][0];
     btnBk.innerHTML = jsonObj['flag']['de']+jsonObj['btn']['de'][0];
+    // document.querySelectorAll('option[value=DE]')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=DE]')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['de'];
     df_opt[1].text = jsonObj['default_opt']['de'];
     btnId.href = jsonObj['id_link']['de'];
@@ -65,6 +71,8 @@ function change(jsonObj) {
     id_h1.innerHTML = jsonObj['id_h1']['nl'];
     btnId.innerHTML = jsonObj['flag']['nl']+jsonObj['btn']['nl'][0];
     btnBk.innerHTML = jsonObj['flag']['nl']+jsonObj['btn']['nl'][0];
+    // document.querySelectorAll('option[value=NL')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=NL')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['nl'];
     df_opt[1].text = jsonObj['default_opt']['nl'];
     btnId.href = jsonObj['id_link']['nl'];
@@ -77,6 +85,8 @@ function change(jsonObj) {
     id_h1.innerHTML = jsonObj['id_h1']['uk'];
     btnId.innerHTML = jsonObj['flag']['uk']+jsonObj['btn']['uk'][0];
     btnBk.innerHTML = jsonObj['flag']['uk']+jsonObj['btn']['uk'][0];
+    // document.querySelectorAll('option[value=UK')[0].selected = 'selected';
+    // document.querySelectorAll('option[value=UK')[1].selected = 'selected';
     df_opt[0].text = jsonObj['default_opt']['uk'];
     df_opt[1].text = jsonObj['default_opt']['uk'];
     btnId.href = jsonObj['id_link']['uk'];
@@ -98,7 +108,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['bf'];
       coverId.src = jsonObj['cover']['bf']['0'];
       coverBk.src = jsonObj['cover']['bf']['1'];
-      df_opt[1].text = jsonObj['sel_opt']['bf'];
+      document.querySelectorAll('option[value=BF]')[1].selected = 'selected';
     }else if (this.value === "BV") {
       logoID.src = jsonObj['logo_ID']['bv'];
       intro.innerHTML = jsonObj['intro']['bv'];
@@ -111,7 +121,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['bf'];
       coverId.src = jsonObj['cover']['bv']['0'];
       coverBk.src = jsonObj['cover']['bv']['1'];
-      df_opt[1].text = jsonObj['sel_opt']['bv'];
+      document.querySelectorAll('option[value=BV]')[1].selected = 'selected';
     }else if (this.value === "DE") {
       logoID.src = jsonObj['logo_ID']['de'];
       intro.innerHTML = jsonObj['intro']['de'];
@@ -124,7 +134,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['de'];
       coverId.src = jsonObj['cover']['de']['0'];
       coverBk.src = jsonObj['cover']['de']['1'];
-      df_opt[1].text = jsonObj['sel_opt']['de'];
+      document.querySelectorAll('option[value=DE]')[1].selected = 'selected';
     }else if (this.value === "NL") {
       logoID.src = jsonObj['logo_ID']['nl'];
       intro.innerHTML = jsonObj['intro']['nl'];
@@ -137,7 +147,7 @@ function change(jsonObj) {
       btnBk.href = 'http://bakkercomfort.nl/';
       coverId.src = jsonObj['cover']['nl']['0'];
       coverBk.src = jsonObj['cover']['nl']['1'];
-      df_opt[1].text = jsonObj['sel_opt']['nl'];
+      document.querySelectorAll('option[value=NL')[1].selected = 'selected';
     }else if (this.value === "UK") {
       logoID.src = jsonObj['logo_ID']['uk'];
       intro.innerHTML = jsonObj['intro']['uk'];
@@ -150,7 +160,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['uk'];
       coverId.src = jsonObj['cover']['uk']['0'];
       coverBk.src = jsonObj['cover']['uk']['1'];
-      df_opt[1].text = jsonObj['sel_opt']['uk'];
+      document.querySelectorAll('option[value=UK')[1].selected = 'selected';
     }
   }
   document.getElementById('BK_country').onchange = function() {
@@ -167,7 +177,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['bf'];
       coverId.src = jsonObj['cover']['bf']['0'];
       coverBk.src = jsonObj['cover']['bf']['1'];
-      df_opt[0].text = jsonObj['sel_opt']['bf'];
+      document.querySelectorAll('option[value=BF')[0].selected = 'selected';
     }else if (this.value === "BV") {
       logoID.src = jsonObj['logo_ID']['bv'];
       intro.innerHTML = jsonObj['intro']['bv'];
@@ -180,7 +190,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['bf'];
       coverId.src = jsonObj['cover']['bv']['0'];
       coverBk.src = jsonObj['cover']['bv']['1'];
-      df_opt[0].text = jsonObj['sel_opt']['bv'];
+      document.querySelectorAll('option[value=BV')[0].selected = 'selected';
     }else if (this.value === "DE") {
       logoID.src = jsonObj['logo_ID']['de'];
       intro.innerHTML = jsonObj['intro']['de'];
@@ -193,8 +203,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['de'];
       coverId.src = jsonObj['cover']['de']['0'];
       coverBk.src = jsonObj['cover']['de']['1'];
-      df_opt[0].text = jsonObj['sel_opt']['de'];
-      df_opt[0].value = jsonObj['default_opt']['de'];
+      document.querySelectorAll('option[value=DE')[0].selected = 'selected';
       console.log(df_opt[0])
     }else if (this.value === "NL") {
       logoID.src = jsonObj['logo_ID']['nl'];
@@ -208,7 +217,7 @@ function change(jsonObj) {
       btnBk.href = 'http://bakkercomfort.nl/';
       coverId.src = jsonObj['cover']['nl']['0'];
       coverBk.src = jsonObj['cover']['nl']['1'];
-      df_opt[0].text = jsonObj['sel_opt']['nl'];
+      document.querySelectorAll('option[value=NL')[0].selected = 'selected';
     }else if (this.value === "UK") {
       logoID.src = jsonObj['logo_ID']['uk'];
       intro.innerHTML = jsonObj['intro']['uk'];
@@ -221,7 +230,7 @@ function change(jsonObj) {
       btnBk.href = jsonObj['bk_link']['uk'];
       coverId.src = jsonObj['cover']['uk']['0'];
       coverBk.src = jsonObj['cover']['uk']['1'];
-      df_opt[0].text = jsonObj['sel_opt']['uk'];
+      document.querySelectorAll('option[value=UK')[0].selected = 'selected';
     }
   }
 } // fct change lancée par evt request.onload

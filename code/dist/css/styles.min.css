@@ -256,6 +256,7 @@ select::-ms-expand {
     outline: none;
     overflow: hidden; }
   .id .country input[type=submit], .bk .country input[type=submit] {
+    cursor: pointer;
     height: 37px;
     padding: 0 32px;
     color: #fff;

@@ -19,28 +19,27 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
 
     / main.wrapper
     .wrapper
-      header
-      section
       .select_country
         .id
+          / h1 change depending on the location of the user browser
           h1
             | IDEAL &amp; PRACTICAL
           form action=""
             .country
               .country_selPerso
                 select#ID_country name="ID_country"
-                  option value="UK"
-                    | England
+                  option value="default"
+                    | Choose your language
                   option value="BF"
-                    | Belgique BF
+                    | Belgique (FR)
                   option value="BV"
-                    | Belgique BV
-                  option value="NL"
-                    | Pays bas NL
+                    | Belgie (VL)
                   option value="DE"
-                    | Allemagne DE
-                  option value="FR"
-                    | France FR
+                    | Deutschland
+                  option value="NL"
+                    | Nederland
+                  option value="UK"
+                    | United Kingdom
               input name="ID_country_submit" type="submit" value="GO"
 
           a.country_lk#ID_country_browser_origin href="http://#browser_country.ct"
@@ -54,18 +53,18 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
             .country
               .country_selPerso
                 select#BK_country name="BK_country"
-                  option value="UK"
-                    | England
+                  option value="default"
+                    | Choose your language
                   option value="BF"
-                    | Belgique BF
+                    | Belgique (FR)
                   option value="BV"
-                    | Belgique BV
-                  option value="NL"
-                    | Pays bas NL
+                    | Belgie (VL)
                   option value="DE"
-                    | Allemagne DE
-                  option value="FR"
-                    | France FR
+                    | Deutschland
+                  option value="NL"
+                    | Nederland
+                  option value="UK"
+                    | United Kingdom
               input name="BK_country_submit" type="submit" value="GO"
 
           a.country_lk#BK_country_browser_origin href="http://#browser_country.ct"
@@ -73,8 +72,9 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
             img src="img/flag_UK.png" alt=""
             | Direct acces to the site ►
       .cover
-        img src="img/cov-0917-ID_UK.jpg" alt=""
-        img src="img/covWin17-BK_GB.jpg" alt=""
+        / img change depending on the location of the user browser
+        img src="img/cov-ID_UK.jpg" alt=""
+        img src="img/cov-BK_UK.jpg" alt=""
       
       / https://codepen.io/seleckis/pen/WwQgvx
       .carousel.js-carousel

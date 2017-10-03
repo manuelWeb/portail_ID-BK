@@ -144,6 +144,7 @@ select::-ms-expand {
   }
   .country input[type=submit] {
     @extend .rounded;
+    cursor: pointer;
     height: 37px;
     padding: 0 32px;
     color: #fff;

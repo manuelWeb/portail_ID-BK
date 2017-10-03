@@ -1,9 +1,79 @@
 {
+  "logo_ID": {
+    "bf": "img/ID-bf_logo.png",
+    "bv": "img/ID-bv_logo.png",
+    "de": "img/ID-de_logo.png",
+    "nl": "img/ID-nl_logo.png",
+    "uk": "img/ID-uk_logo.png"
+  },
+  "intro": {
+    "bf": "Bienvenue sur IDEAL PRATIQUE et BAKKER COMFORT, selectionnez votre marque puis votre pays.",
+    "bv": "Welkom bij  IDEAL & PRAKTIJK en BAKKER COMFORT, kies eerst uw catalogus en nadien uw land.",
+    "de": "Herzlich willkommen bei IDEAL & PRAKTISCH und BAKKER COMFORT, wählen Sie  Ihre Marke und danach Ihr Land aus.",
+    "nl": "Welkom bij  IDEAL & PRAKTIJK en BAKKER COMFORT, kies eerst uw catalogus en nadien uw land.",
+    "uk": "Welcome to IDEAL PRACTICAL and BAKKER COMFORT, select your brand and then your country."
+  },
+  "id_h1": {
+    "bf": "IDEAL & PRATIQUE",
+    "bv": "IDEAL & PRAKTIJK",
+    "de": "IDEAL & PRAKTISCH",
+    "nl": "IDEAL & PRAKTIJK",
+    "uk": "IDEAL & PRACTICAL"
+  },
+  "default_opt": {
+    "bf": "Choisissez votre langue",
+    "bv": "Kies uw taal",
+    "de": "Wähle deine Sprache",
+    "nl": "Kies uw taal",
+    "uk": "Choose your language"
+  },
+  "sel_opt": {
+    "bf": "Belgique (FR)",
+    "bv": "Belgie (VL)",
+    "de": "Deutschland",
+    "nl": "Nederland",
+    "uk": "United Kingdom"
+  },
+  "submit": {
+    "bf": "GO",
+    "bv": "GO",
+    "de": "Los",
+    "nl": "GO",
+    "uk": "GO"
+  },
+  "id_link": {
+    "bf": "https://www.ideal-pratique.be/befr/index.aspx",
+    "bv": "https://www.ideal-praktijk.be/bevl/index.aspx",
+    "de": "https://www.ideal-praktisch.de/de/index.aspx",
+    "nl": "https://www.ideal-praktijk.nl/nl/index.aspx",
+    "uk": "https://www.ideal-practical.co.uk/uk/index.aspx"
+  },
+  "bk_link": {
+    "bf": "http://bakkercomfort.be/",
+    "bv": "http://bakkercomfort.be/",
+    "de": "http://bakkercomfort.de/",
+    "nl": "http://bakkercomfort.nl/",
+    "uk": "http://bakkercomfort.co.uk/"
+  },
   "btn" : {
-    "bf": "Accéder directement au site",
-    "bv": "Directe toegang tot de website",
-    "de": "Direkter Zugang auf die Internetseite",
-    "nl": "Directe toegang tot de website",
-    "uk": "Direct access to the site :)"
+    "bf": ["Accéder directement au site","GO"],
+    "bv": ["Directe toegang tot de website","GO"],
+    "de": ["Direkter Zugang auf die Internetseite","Los"],
+    "nl": ["Directe toegang tot de website","GO"],
+    "uk": ["Direct access to the site","GO"]
+  },
+  "flag": {
+    "bf": "<img alt=\"\" src=\"img/flag_BF.png\" />",
+    "bv": "<img alt=\"\" src=\"img/flag_BV.png\" />",
+    "de": "<img alt=\"\" src=\"img/flag_DE.png\" />",
+    "nl": "<img alt=\"\" src=\"img/flag_NL.png\" />",
+    "uk": "<img alt=\"\" src=\"img/flag_UK.png\" />"
+  },
+  "cover": {
+    "bf": ["img/cov-ID_BF.jpg","img/cov-BK_BF.jpg"],
+    "bv": ["img/cov-ID_BV.jpg","img/cov-BK_BV.jpg"],
+    "de": ["img/cov-ID_DE.jpg","img/cov-BK_DE.jpg"],
+    "nl": ["img/cov-ID_NL.jpg","img/cov-BK_NL.jpg"],
+    "uk": ["img/cov-ID_UK.jpg","img/cov-BK_UK.jpg"]
   }
 }

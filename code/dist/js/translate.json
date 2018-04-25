@@ -29,7 +29,7 @@
   },
   "sel_opt": {
     "bf": "Belgique (FR)",
-    "bv": "Belgie (VL)",
+    "bv": "België (VL)",
     "de": "Deutschland",
     "nl": "Nederland",
     "uk": "United Kingdom"
@@ -56,11 +56,11 @@
     "uk": "https://www.ideal-practical.co.uk/uk/index.aspx"
   },
   "bk_link": {
-    "bf": "http://bakkercomfort.be/",
-    "bv": "http://bakkercomfort.be/",
-    "de": "http://bakkercomfort.de/",
-    "nl": "http://bakkercomfort.nl/",
-    "uk": "http://bakkercomfort.co.uk/"
+    "bf": "https://www.bakker.com/fr-fr/",
+    "bv": "https://www.bakker.com/nl-be",
+    "de": "https://www.bakker.com/de-de",
+    "nl": "https://www.bakker.com/nl-nl",
+    "uk": "https://www.bakker.com/en-gb"
   },
   "btn" : {
     "bf": ["Accéder directement au site","GO"],

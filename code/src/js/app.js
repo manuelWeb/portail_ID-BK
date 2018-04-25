@@ -101,7 +101,7 @@ function change(jsonObj) {
     coverBk.src = jsonObj.cover.uk["1"];
   }
 
-  // mise à jour formulaires
+  // fct mise à jour formulaires
   const onCh = (id) => {
 
     return document.getElementById(id).onchange = function(e) {
@@ -126,7 +126,6 @@ function change(jsonObj) {
           if( id === 'ID_country' ) {
             document.querySelectorAll('option[value=BF]')[1].selected = 'selected';
           }else {
-            document.querySelectorAll('option[value=BF]')[0].selected = 'selected';
             document.querySelectorAll('option[value=BF]')[0].selected = 'selected';
           }
           break;
@@ -210,8 +209,9 @@ function change(jsonObj) {
     }
     
   };
-  onCh('ID_country')
-  onCh('BK_country')
+
+  onCh('ID_country');
+  onCh('BK_country');
 
 
   

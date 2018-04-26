@@ -60,7 +60,12 @@
     "bv": "https://www.bakker.com/nl-be",
     "de": "https://www.bakker.com/de-de",
     "nl": "https://www.bakker.com/nl-nl",
-    "uk": "https://www.bakker.com/en-gb"
+    "uk": "https://www.bakker.com/en-gb",
+    "bf": "http://bakkercomfort.be/",
+    "bv": "http://bakkercomfort.be/",
+    "de": "http://bakkercomfort.de/",
+    "nl": "http://bakkercomfort.nl/",
+    "uk": "http://bakkercomfort.co.uk/"
   },
   "btn" : {
     "bf": ["Accéder directement au site","GO"],
